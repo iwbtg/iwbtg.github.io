@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 0, 0, 0.3),
+        rgba(255, 0, 0, 0.3) 10px,
+        rgba(255, 165, 0, 0.3) 10px,
+        rgba(255, 165, 0, 0.3) 20px,
+        rgba(255, 255, 0, 0.3) 20px,
+        rgba(255, 255, 0, 0.3) 30px,
+        rgba(0, 128, 0, 0.3) 30px,
+        rgba(0, 128, 0, 0.3) 40px,
+        rgba(0, 0, 255, 0.3) 40px,
+        rgba(0, 0, 255, 0.3) 50px,
+        rgba(75, 0, 130, 0.3) 50px,
+        rgba(75, 0, 130, 0.3) 60px,
+        rgba(238, 130, 238, 0.3) 60px,
+        rgba(238, 130, 238, 0.3) 70px
+    );
+}
+
+header {
+    background-color: #4A90E2;  /* The light blue color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact-content {
+    margin: 40px 10%;
+}
+
+#contact-content h2 {
+    margin-top: 20px;
+}
+
+#contact-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact-content li {
+    margin: 10px 0;
+}
+
+#contact-content a {
+    text-decoration: none;
+    color: #4A90E2;  /* The light blue color */
+    transition: color 0.3s;
+}
+
+#contact-content a:hover {
+    color: #357ABD; /* Darkened blue color for hover effect */
+}
+
+footer {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}

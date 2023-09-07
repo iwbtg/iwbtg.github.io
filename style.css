@@ -1,80 +1,99 @@
+/* Overall Page Style */
 body {
     margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 100px 100%;
+    background-repeat: repeat-x;
 }
 
-.banner {
-    background-color: #89CFF0;
+/* Header with Blue Banner */
+.blue-banner {
+    background-color: blue;
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-.banner h1 {
-    margin: 0;
+.blue-banner h1 {
     font-size: 2.5em;
+    margin: 0;
 }
 
-.banner h2 {
-    margin: 5px 0;
+.blue-banner h2 {
     font-size: 1.5em;
+    margin: 0;
 }
 
-.banner nav {
-    margin-top: 10px;
+.blue-banner nav {
+    margin-top: 20px;
 }
 
-.banner nav a {
+.blue-banner nav a {
     margin: 0 15px;
-    color: white;
     text-decoration: none;
-    transition: color 0.3s ease;
+    color: white;
+    transition: color 0.3s;
 }
 
-.banner nav a:hover {
-    color: #ddeeff;
+.blue-banner nav a:hover {
+    color: #dddddd;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 10%;
+    background-color: white;
     padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.avatar {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
-/* Media Query for mobile devices */
-@media (max-width: 480px) {
-    .banner h1, .banner h2, .banner nav a {
-        font-size: 90%;
+.about-me {
+    max-width: 50%;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        margin: 20px 5%;
     }
 
-    .banner nav {
-        display: block;
+    .avatar {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 150px;
+    }
+
+    .about-me {
+        max-width: 100%;
         text-align: center;
     }
+
+    .blue-banner h1, .blue-banner h2, .blue-banner nav a {
+        font-size: 90%;
+    }
 }
 
-/* Media Query for tablet devices */
-@media (min-width: 481px) and (max-width: 768px) {
-    .banner h1, .banner h2, .banner nav a {
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .blue-banner h1, .blue-banner h2, .blue-banner nav a {
         font-size: 95%;
     }
-
-    .banner nav {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.footer {
-    text-align: center;
-    margin-top: 20px;
 }

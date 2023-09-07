@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klaora's Gallery</title>
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="webcomic-gallery.css">
+    <script src="webcomic-gallery.js" defer></script>
 </head>
 
 <body>
+    <div class="header">Some of Klaora's work</div>
+
     <div class="gallery">
-        <img src="Poster1.png" alt="Poster 1">
-        <img src="Poster2.png" alt="Poster 2">
-        <img src="Poster3.png" alt="Poster 3">
-        <img src="Poster4.png" alt="Poster 4">
-        <img src="Poster5.png" alt="Poster 5">
-        <img src="Poster6.png" alt="Poster 6">
-        <img src="Poster7.png" alt="Poster 7">
-        <img src="Poster8.png" alt="Poster 8">
-        <img src="Poster9.png" alt="Poster 9">
+        <a href="#" id="prevImage" class="navArea"></a>
+        <img src="Poster1.png" alt="Poster 1" id="currentPoster">
+        <a href="#" id="nextImage" class="navArea"></a>
+    </div>
+
+    <div class="footer">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
     </div>
 </body>
 

@@ -1,0 +1,63 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, purple 25%, white 25%, white 75%, purple 75%);
+    color: black;
+}
+
+.banner {
+    background-color: #6CA3D8;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.convention-images img {
+    width: 33.3%;
+    float: left;
+}
+
+.blue-box {
+    background-color: #6CA3D8;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.years {
+    display: flex;
+    justify-content: space-between;
+}
+
+.year-box {
+    background-color: lightgray;
+    width: 24%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    clear: both;
+}

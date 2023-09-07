@@ -1,58 +1,25 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-header {
-    background-color: #4A90E2;  /* The light blue color */
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.grid-gallery {
+.gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin: 40px 10%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
 }
 
-.grid-gallery figure {
-    border: 1px solid #ddd;
-    overflow: hidden;
+.gallery img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.grid-gallery img {
-    width: 100%;
-    display: block;
-    transition: transform 0.3s;
-}
-
-.grid-gallery img:hover {
-    transform: scale(1.1);
-}
-
-.grid-gallery figcaption {
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    font-size: 0.9em;
-    transition: background-color 0.3s;
-}
-
-.grid-gallery figure:hover figcaption {
-    background-color: rgba(74, 144, 226, 0.6);  /* The light blue color on hover */
-}
-
-footer {
-    text-align: center;
-    margin: 20px 0;
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+.gallery img:hover {
+    transform: scale(1.05);
 }

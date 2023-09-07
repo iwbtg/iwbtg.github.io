@@ -1,40 +1,51 @@
-body, html {
+body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background: repeating-linear-gradient(45deg, red, yellow, green, blue, indigo, violet);
-    color: white;
+    background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
+    background-repeat: repeat-x;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.blue-banner {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.blue-banner h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.blue-banner nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.blue-banner nav a:hover {
+    color: #dddddd;
+}
+
+.gallery {
+    text-align: center;
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
+.gallery h2 {
+    font-size: 1.5em;
 }
 
-.posters img {
+.gallery img {
     width: 100%;
-    display: block;
+    max-width: 600px;
     margin-bottom: 20px;
-}
-
-p {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-a {
-    color: white;
-    text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+    font-size: 0.8em;
 }

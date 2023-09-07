@@ -1,14 +1,12 @@
-/* Overall Page Style */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: white;
     background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);
     background-size: 100px 100%;
     background-repeat: repeat-x;
 }
 
-/* Header with Blue Banner */
 .blue-banner {
     background-color: #20ACF1;
     color: white;
@@ -31,17 +29,19 @@ body {
 }
 
 .blue-banner nav a {
-    margin: 0 15px;
+    margin: 0 20px; /* Increased spacing */
     text-decoration: none;
     color: white;
-    transition: color 0.3s;
+    transition: color 0.3s, background-color 0.3s; /* Added background transition */
+    padding: 5px 10px; /* Added padding */
+    border-radius: 5px; /* Added for visual appeal */
 }
 
-.blue-banner nav a:hover {
+.blue-banner nav a:hover, .blue-banner nav a:focus {
     color: #dddddd;
+    background-color: rgba(255, 255, 255, 0.2); /* Added background hover effect */
 }
 
-/* Main Content */
 main {
     display: flex;
     justify-content: space-around;
@@ -56,19 +56,29 @@ main {
     max-width: 200px;
     border-radius: 50%;
     margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
 }
 
 .about-me {
     max-width: 50%;
+    font-family: 'Georgia', serif; /* Changed font for a personal touch */
 }
 
-/* Footer */
 footer {
     text-align: center;
     margin: 20px 0;
 }
 
-/* Mobile Styles */
+footer a {
+    color: #20ACF1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover, footer a:focus {
+    color: #005882; /* Darkened blue for hover effect */
+}
+
 @media only screen and (max-width: 768px) {
     main {
         flex-direction: column;
@@ -91,7 +101,6 @@ footer {
     }
 }
 
-/* Tablet Styles */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     .blue-banner h1, .blue-banner h2, .blue-banner nav a {
         font-size: 95%;

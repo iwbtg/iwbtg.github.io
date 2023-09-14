@@ -58,16 +58,56 @@ nav a {
     margin: 10px;
 }
 
+/* Yearly conventions section styles */
+.yearly-conventions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%; /* consistent with .convention-list padding */
+    margin-bottom: 40px; /* spacing between this section and the footer */
+}
+
+.year-list {
+    width: 23%; /* Splitting the width evenly for 4 lists with some gap in between */
+    background-color: #e9e9e9; /* light grey background for contrast */
+    padding: 10px;
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+.year-list h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.year-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.year-list li {
+    margin: 8px 0;
+}
+
+/* End of the yearly conventions section styles */
+
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #20ACF1; /* This color is consistent with the contact.css */
+    background-color: #20ACF1;
     color: white;
 }
 
 @media (max-width: 768px) {
     .convention-card {
         width: 48%; /* 2 cards per row on medium screens */
+    }
+    
+    .yearly-conventions {
+        flex-direction: column; /* stack the yearly lists vertically on smaller screens */
+    }
+    
+    .year-list {
+        width: 100%; /* full width on smaller screens */
+        margin-bottom: 20px; /* spacing between each yearly list when stacked */
     }
 }
 

@@ -21,7 +21,6 @@ body {
     );
 }
 
-/* Blue Banner */
 .blue-banner {
     background-color: #007BFF; /* Blue color */
     color: white;
@@ -32,6 +31,15 @@ body {
 .blue-banner h1 {
     font-size: 2.5em;
     margin: 0;
+}
+
+.blue-banner h2 {
+    font-size: 1.8em;
+    margin: 5px 0; /* Adjust as needed for spacing */
+}
+
+.blue-banner nav {
+    margin-top: 10px; /* Adjust as needed for spacing */
 }
 
 .blue-banner nav a {
@@ -74,7 +82,8 @@ body {
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #f4f4f4;
-    font-size: 0.8em;
+    margin: 20px 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
 }

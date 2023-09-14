@@ -6,8 +6,8 @@ body, html {
     color: black;
 }
 
-.banner {
-    background-color: #6CA3D8;
+.blue-banner {
+    background-color: #4A90E2;
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
@@ -61,7 +61,7 @@ nav a {
 footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #6CA3D8;
+    background-color: #4A90E2; /* This color is consistent with the contact.css */
     color: white;
 }
 

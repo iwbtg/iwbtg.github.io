@@ -11,6 +11,8 @@ body, html {
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
+    color: white; /* Changed text color to white */
+    font-family: 'Patrick Hand', Arial, sans-serif; /* Added Patrick Hand as primary font */
 }
 
 h1 {
@@ -25,6 +27,7 @@ nav a {
     margin: 0 10px;
     color: white;
     text-decoration: none;
+    font-family: 'Patrick Hand', Arial, sans-serif; /* Set font to Patrick Hand for navigation links */
 }
 
 .convention-intro {
